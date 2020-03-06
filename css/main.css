@@ -24,12 +24,29 @@ div + div {
   margin-top: 20px;
 }
 
+input {
+  text-align: center;
+  margin-top: 10px;
+  border: 0;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  height: 44px;
+  padding: 0 15px;
+  font-size: 14px;
+  outline: none;
+}
+
 .countries {
   margin-top: 15px;
   display: flex;
   width: 100%;
   flex-direction: row;
   justify-content: space-around;
+}
+
+#url {
+  width: 450px;
+  overflow-wrap: break-word;
 }
 
 .countries span {

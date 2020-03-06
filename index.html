@@ -15,19 +15,19 @@
     <main>
       <div>
         <strong>Domain Detected</strong>
-        <span id="domain"></span>
+        <input type="text" id="domain"/>
       </div>
 
       <div>
         <strong>Countries</strong>
         <div class="countries">
-          <span class="country-item" onclick="setCountry(event)">None</span>
-          <span class="country-item" onclick="setCountry(event)">AT</span>
-          <span class="country-item" onclick="setCountry(event)">AU</span>
-          <span class="country-item" onclick="setCountry(event)">CH</span>
-          <span class="country-item" onclick="setCountry(event)">DE</span>
-          <span class="country-item" onclick="setCountry(event)">UK</span>
-          <span class="country-item" onclick="setCountry(event)">US</span>
+          <span class="country-item">None</span>
+          <span class="country-item">AT</span>
+          <span class="country-item">AU</span>
+          <span class="country-item">CH</span>
+          <span class="country-item">DE</span>
+          <span class="country-item">UK</span>
+          <span class="country-item">US</span>
         </div>
       </div>
 
@@ -36,7 +36,7 @@
         <span id="url"></span>
       </div>
 
-      <button type="button" onclick="openSearchUrl()">Open URL</button>
+      <button type="button" id="url-button">Open URL</button>
     </main>
   </body>
   <script src="js/main.js"></script>
