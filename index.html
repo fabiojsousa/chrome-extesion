@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Extesion</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
-    <script src='js/main.js'></script>
-</head>
-<body>
-    <h1>Hello world!</h1>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <main>
-        <form action="">
-            <label for="url">URL</label>
-            <input type="text" name="url" id="url">
+      <div>
+        <strong>Domain Detected</strong>
+        <span id="domain"></span>
+      </div>
 
-            <label for="domain">Domain detected</label>
-            <input type="text" name="domain" id="domain">
+      <div>
+        <strong>Countries</strong>
+        <div class="countries">
+          <span class="country-item" onclick="setCountry(event)">None</span>
+          <span class="country-item" onclick="setCountry(event)">AT</span>
+          <span class="country-item" onclick="setCountry(event)">AU</span>
+          <span class="country-item" onclick="setCountry(event)">CH</span>
+          <span class="country-item" onclick="setCountry(event)">DE</span>
+          <span class="country-item" onclick="setCountry(event)">UK</span>
+          <span class="country-item" onclick="setCountry(event)">US</span>
+        </div>
+      </div>
 
-            <label for="country">Country</label>
-            <select name="country" id="country">
-                <option value=""></option>
-                <option value="AU">AU</option>
-                <option value="DE">DE</option>
-                <option value="AT">AT</option>
-                <option value="CH">CH</option>
-                <option value="UK">UK</option>
-                <option value="US">US</option>
-            </select>
-        </form>
+      <div>
+        <strong>URL</strong>
+        <span id="url"></span>
+      </div>
+
+      <button type="button" onclick="openSearchUrl()">Open URL</button>
     </main>
-</body>
+  </body>
+  <script src="js/main.js"></script>
 </html>

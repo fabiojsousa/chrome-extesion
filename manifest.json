@@ -1,0 +1,10 @@
+{
+  "manifest_version": 2,
+  "name": "Search Extesion",
+  "description": "A simple too to make things easy",
+  "version": "1.0.0",
+  "browser_action": {
+    "default_popup": "index.html",
+    "permissions": ["activeTab", "unlimitedStorage"]
+  }
+}
